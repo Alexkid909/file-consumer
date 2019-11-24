@@ -25,14 +25,14 @@ const config = new Config(process.env.NODE_ENV);
 // IP address middleware.
 
 app.use(requestIp.mw());
-
+//
 //Cross Origin Middleware.
 
 app.use(cors());
 
 //Auth token verification middleware'
 
-app.use(AuthService.verifyAuthentication);
+// app.use(AuthService.verifyAuthentication);
 
 //Body parsing middleware.
 
